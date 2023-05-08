@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>Landing page</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle">
+        </div>
+        <header>
+            <a href="#" class="logo">
+                <img src="images/logo1.png" alt="">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Whats's new</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </header>
+        <div class="body">
+            <div class="textBox">
+                <h2>
+                    A lot can happen over <span>Coffee.</span>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa asperiores beatae ab veritatis
+                    commodi unde, eum sequi in quae error voluptate et alias pariatur nulla! Rerum autem dolore
+                    molestias ab possimus dolorum praesentium aperiam!
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imageBox">
+                <img src="images/americano.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li>
+                <img src="images//americano.png"
+                    onclick="imgSlider('images/americano.png');changeCircleColor('#3a0707')" alt="">
+            </li>
+            <li>
+                <img src="images/cafe latte.png"
+                    onclick="imgSlider('images/cafe latte.png');changeCircleColor('#b8b502')" alt="">
+            </li>
+            <li>
+                <img src="images/cafe mocha.png"
+                    onclick="imgSlider('images/cafe mocha.png');changeCircleColor('#d8480f')" alt="">
+            </li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/cafecoffeeday" target="_blank"><img src="images/facebook.png"
+                        alt=""></a></li>
+            <li><a href="https://twitter.com/cafecoffeeday/" target="_blank"><img src="images/twitter.png" alt=""></a>
+            </li>
+            <li><a href="https://www.instagram.com/cafecoffeeday/" target="_blank"><img src="images/instagram.png"
+                        alt=""></a>
+            </li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
